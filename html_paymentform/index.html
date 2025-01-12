@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment_Form</title>
+  </head>
+  <body >
+    <h1 style="text-align: center;">Payment Form</h1>
+    <hr />
+    <h2 style="background-color: aquamarine">User Details</h2>
+    <form action="" method="get">
+        <div>
+            <label for="fname">*First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter first name here" required/></p>
+        </div>
+
+        <div>
+            <label for="lname">*Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter last name here" required/></p>
+        </div>
+
+        <div>
+            <p>
+            <fieldset style="width: 200px;">
+                <legend>Gender</legend>
+                Male<input type="radio" name="gender" value="Male" id="Male">
+                Female<input type="radio" name="gender" value="Female" id="Female">
+                Other<input type="radio" name="gender" value="Other" id="other">
+            </fieldset>
+        </p>
+        </div>
+
+        <div>
+            <label for="mno">*Mobile Number:</label>
+            <input type="tel" name="mno" id="mno" placeholder="Enter mobile number here" maxlength="10" required/></p>
+        </div>
+
+        <div>
+            <label for="dob">*Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required/></p>
+        </div>
+
+        <div>
+            <label for="email">*Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email id here" required/></p>
+        </div>
+
+        <div>
+            <p>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" placeholder="Enter address here" cols="55" rows="5"></textarea></p>
+        </div>
+
+        <div>
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="">--Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+        </div>
+
+        <div>
+            <p>
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option value="">--Select State</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+            </select>
+        </p>
+        </div>
+
+        <div>
+            <p>
+            <label for="pincode">Pincode:</label>
+            <input type="number" name="pincode" id="pincode" placeholder="Enter pincode here" maxlength="6"></p>
+        </p>
+        </div>
+        <hr>
+        <h2 style="background-color: aquamarine">Payment Details</h2>
+<div>
+        
+            <label for="Payment">*Payment Type:</label>
+            <select name="Payment" id="Payment" required>
+                <option value="">--Select Payment Type</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Net Banking">Net Banking</option>
+                <option value="UPI">UPI</option>
+            </select>
+</div>
+        
+        <div>
+            <p>
+            <label for="cardno">*Card Number:</label>
+            <input type="number" name="cardno" id="cardno" placeholder="Enter card number here" required>
+        </p>
+        </div>
+
+        <div>
+            
+            <label for="cvv">*CVV:</label>
+            <input type="password" name="cvv" id="cvv" placeholder="Enter CVV here" required>
+        </div>
+        <div>
+            <p>
+            <input type="submit" value="Pay now" style="text-align: end;" />
+        </p>
+        </div>
+    </form>
+  </body>
+</html>
